@@ -4,20 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Բարև </title>
+    <script src="script/script.js" defer></script>
 </head>
 
 <body>
     <h1>Contact Form</h1>
-    <form action="https://formsubmit.co/86e229d35b9f54fa2db3aa832ca6f236" method="POST">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="Nombre" value="">
+    <div>
+        <input type="radio" id="answer" name="answer" value="YES">
+        <label for="yes">YES</label>
         <br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="Apellido" value="">
-        <br><br>
-        <input type="submit" value="Submit">
-    </form>
+        <input type="radio" id="answer" name="answer" value="NO">
+        <label for="no">NO</label>
+        <br>
+        <label for="suggestion">Suggestion:</label><br></label><br>
+        <input type="textarea" id="suggestion" name="suggestion" value="">
+        <br>
+        <input type="submit" value="Submit" onclick="sendEmail()">
+    </div>
 </body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("CvAX4DPY9C3oGIEQX");
+    })();
+</script>
 
 </html>
