@@ -22,15 +22,13 @@ function clearRadio() {
     radio.checked = false;
 }
 
-function sendForm() {
-    submit.addEventListener('click', function () {
-        if (document.querySelector('input[name="answer"]:checked').value == 'NO') {
-            sendEmail()
-        } else {
-            location.assign('./registration/registration.html')
-            console.log(false);
-        }
-    })
-}
+submit.addEventListener('click', function () {
+    if (document.querySelector('input[name="answer"]:checked').value == 'NO') {
+        sendEmail()
+    }
+    else {
+        location.assign('./registration/registration.html')
+        console.log(false);
+    }
+})
 
-sendForm()

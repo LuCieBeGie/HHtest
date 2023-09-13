@@ -4,24 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Բարև </title>
+    <title>Հայ համայնք Ալիկանտե </title>
+    <link rel="stylesheet" href="style.css">
     <script src="script/script.js" defer></script>
 </head>
 
 <body>
-    <h1>Contact Form</h1>
-    <div>
-        <input type="radio" id="answer" name="answer" value="YES">
-        <label for="yes">YES</label>
-        <br>
-        <input type="radio" id="answer" name="answer" value="NO">
-        <label for="no">NO</label>
-        <br>
-        <label for="suggestion">Suggestion:</label><br></label><br>
-        <input type="textarea" id="suggestion" name="suggestion" value="">
+    <header>
+        <h1>ՀՀԱ Հայ համայնք Ալիկանտե</h1>
+        <div>
+            <img class="flag_arm" src="img/flag_arm.jpg" alt="flag_arm" width="60px" height="45px">
+            <img class="flag_spain" src="img/flag_spain.jpg" alt="flag_spain" width="60px" height="45px">
+        </div>
+
+        <svg viewBox="0 25 500 200">
+            <path d="M 0 50 C 215 150 250 0 500 100 L 500 0 L 0 0" fill=" #EAA300"></path>
+            <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#00319B" opacity="0.7"></path>
+            <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#D20011" opacity="0.8"></path>
+        </svg>
+    </header>
+
+    <section class="test-section">
+        <h1>Արդյո՞ք համաձայն եք, որ ձևավորվի ՀՀԱ</h1>
+        <div class="choice">
+            <label>
+                <input type="radio" id="answer" name="answer" value="YES" required>
+                Այո
+            </label>
+            <label>
+                <input type="radio" id="answer" name="answer" value="NO">
+                Ոչ
+            </label>
+        </div>
+        <label id="checkbox">
+            <input type="checkbox" name="info" id="info" name="info" required="required">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam at eos, itaque molestias quasi
+            doloribus! Recusandae alias aspernatur quia molestias! Atque nihil molestias temporibus quam iure. Ducimus,
+            officia rem.
+        </label>
+        <div class="suggestion">
+            <label for="suggestion">Ձեր առաջարկը այստեղ &#128071
+                <textarea name="textarea" id="suggestion"></textarea>
+            </label>
+        </div>
         <br>
         <input type="submit" value="Submit" id="submit">
-    </div>
+    </section>
 </body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
