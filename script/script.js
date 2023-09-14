@@ -12,7 +12,7 @@ function sendEmail() {
             res => {
                 clearRadio()
                 document.getElementById('suggestion').value = ''
-                alert('Success')
+                alert('Ձեր պատասխանը ուղարկված է։ Շնորհակալություն պատասխանի համար')
             }
         ).catch(err => console.log(err));
 }
@@ -23,12 +23,31 @@ function clearRadio() {
 }
 
 submit.addEventListener('click', function () {
-    if (document.querySelector('input[name="answer"]:checked').value == 'NO') {
+    let checked = document.querySelector('input[name="answer"]:checked')
+    let info = document.querySelector('input[name="info"]')
+    let info_label = document.getElementById('#checkbox')
+    valthisform()
+    if (!checked) {
+        alert('Անհրաժեշտ է ընտրել դաշտերից որևէ մեկը')
+        return false
+    }
+    else if (checked.value == 'NO') {
         sendEmail()
     }
     else {
         location.assign('./registration/registration.html')
-        console.log(false);
     }
 })
 
+function valthisform() {
+    var checkboxs = document.getElementById("info");
+    var okay = false;
+
+    if (checkboxs.checked) {
+        okay == true;
+        // break;
+    }
+
+    if (okay) alert("Thank you for checking a checkbox");
+    else alert("Please check a checkbox");
+}

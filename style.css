@@ -10,8 +10,7 @@ body {
 header h1 {
     position: relative;
     z-index: 5;
-    font: 3em sans-serif;
-    font-family: NorKirk;
+    /* font-size:  50%; */
 }
 
 svg {
@@ -49,9 +48,8 @@ div .flag_spain {
 
 .test-section {
     position: absolute;
-    max-height: 150px;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +58,7 @@ div .flag_spain {
 }
 
 .choice {
-    margin-top: 5%;
+    margin-top: 2%;
     width: 75%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
