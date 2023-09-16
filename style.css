@@ -79,9 +79,9 @@ input[type="radio"] {
     border: 0.15em solid currentColor;
 }
 
-#checkbox{
+label[for="info"] {
     margin-top: 5%;
-    width: 50%;  
+    width: 50%
 }
 
 .suggestion {

@@ -1,4 +1,4 @@
-const submit = document.querySelector('#submit');
+const submit = document.getElementById('submit');
 
 function sendEmail() {
     let params = {
@@ -24,30 +24,14 @@ function clearRadio() {
 
 submit.addEventListener('click', function () {
     let checked = document.querySelector('input[name="answer"]:checked')
-    let info = document.querySelector('input[name="info"]')
-    let info_label = document.getElementById('#checkbox')
-    valthisform()
     if (!checked) {
-        alert('Անհրաժեշտ է ընտրել դաշտերից որևէ մեկը')
+        alert('Please select a valid')
         return false
     }
-    else if (checked.value == 'NO') {
+    if (checked.value == 'NO') {
         sendEmail()
     }
     else {
         location.assign('./registration/registration.html')
     }
 })
-
-function valthisform() {
-    var checkboxs = document.getElementById("info");
-    var okay = false;
-
-    if (checkboxs.checked) {
-        okay == true;
-        // break;
-    }
-
-    if (okay) alert("Thank you for checking a checkbox");
-    else alert("Please check a checkbox");
-}
