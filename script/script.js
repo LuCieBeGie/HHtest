@@ -1,4 +1,7 @@
-const submit = document.getElementById('submit');
+const submit = document.querySelector('form');
+const radio = document.querySelector('input[name="answer"]:checked');
+const checked = document.querySelector('input[name="answer"]:checked')
+
 
 function sendEmail() {
     let params = {
@@ -18,20 +21,16 @@ function sendEmail() {
 }
 
 function clearRadio() {
-    let radio = document.querySelector('input[name="answer"]:checked');
     radio.checked = false;
 }
 
-submit.addEventListener('click', function () {
-    let checked = document.querySelector('input[name="answer"]:checked')
-    if (!checked) {
-        alert('Please select a valid')
-        return false
-    }
-    if (checked.value == 'NO') {
+submit.addEventListener('submit', function (event) {
+    if (document.querySelector('input[name="answer"]:checked').value == 'NO') {
+        event.preventDefault()
         sendEmail()
     }
     else {
+        event.preventDefault()
         location.assign('./registration/registration.html')
     }
 })
