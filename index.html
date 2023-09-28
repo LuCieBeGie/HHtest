@@ -14,34 +14,56 @@
     <header>
         <h1>ՀՀԱ Հայ համայնք Ալիկանտե</h1>
         <div>
-            <img class="flag_arm" src="img/flag_arm.jpg" alt="flag_arm" width="60px" height="45px">
-            <img class="flag_spain" src="img/flag_spain.jpg" alt="flag_spain" width="60px" height="45px">
+            <img class="coat_of_arms_arm" src="img/Coat_of_arms_of_Armenia.svg.png" alt="flag_arm" width="60px"
+                height="45px">
+            <img class="coat_of_arms_spain" src="img/Coat_of_Arms_of_Spain.svg.png" alt="flag_spain" width="60px"
+                height="45px">
         </div>
-        <svg viewBox="0 25 500 200">
-            <path d="M 0 50 C 215 150 250 0 500 100 L 500 0 L 0 0" fill=" #EAA300"></path>
-            <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#00319B" opacity="0.7"></path>
-            <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#D20011" opacity="0.8"></path>
+        <svg viewBox="0 25 500 200" class="flag_arm">
+            <path id="path1" d="M 0 50 C 215 150 250 0 500 100 L 500 0 L 0 0" fill=" #EAA300"></path>
+            <path id="path2" d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#00319B" opacity="0.7"></path>
+            <path id="path3" d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#D20011" opacity="0.8"></path>
+        </svg>
+        <svg viewBox="0 25 500 200" class="flag_spain">
+            <path id="path1" d="M 0 50 C 215 150 250 0 500 100 L 500 0 L 0 0" fill="#A81418"></path>
+            <path id="path2" d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#F2B700" opacity="0.7"></path>
+            <path id="path3" d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#A81418" opacity="0.8"></path>
         </svg>
     </header>
 
     <form class="test-section">
-        <h1>Արդյո՞ք համաձայն եք, որ ձևավորվի ՀՀԱ</h1>
-        <div class="choice">
-            <label>
-                <input type="radio" id="answer" name="answer" value="YES" required>
-                Այո
-            </label>
-            <label>
-                <input type="radio" id="answer" name="answer" value="NO">
-                Ոչ
-            </label>
-        </div>
+        <section class="section">
+            <h1>Արդյո՞ք համաձայն եք, որ ձևավորվի ՀՀԱ</h1>
+            <div class="choice">
+                <label>
+                    <input type="radio" id="answer" name="answer" value="YES" required>
+                    Այո
+                </label>
+                <label>
+                    <input type="radio" id="answer" name="answer" value="NO">
+                    Ոչ
+                </label>
+            </div>
+        </section>
+        <br>
+        <section class="section">
+            <h1>Ցանկանում ե՞ք անդամագրվել ՀՀԱ-ին</h1>
+            <div class="choice">
+                <label>
+                    <input type="radio" id="answer" name="membership" value="YES" required>
+                    Այո
+                </label>
+                <label>
+                    <input type="radio" id="answer" name="membership" value="NO">
+                    Ոչ
+                </label>
+            </div>
+        </section>
         <label for="info">
             <input type="checkbox" name="checkbox" id="info" required>
-            Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Eius laboriosam at eos, itaque molestias quasi
-            doloribus! Recusandae alias aspernatur quia molestias! Atque nihil molestias temporibus quam iure.
-            Ducimus, officia rem.
+            <mark>Ուշադրություն։</mark> Համայնքի անդամակցումը իրենից ենթադրում է անդամավճար՝ ամսական 5 եվրոյի չափով։
+            Գումարի
+            հավաքագրման նախնական նպատակը տարածքի ամրագրում/վարձակալումն է և միջոցառումների կազմակերպումն է։
         </label>
         <div class="suggestion">
             <label for="suggestion">Ձեր առաջարկը այստեղ &#128071
@@ -49,7 +71,7 @@
             </label>
         </div>
         <br>
-        <input type="submit" value="Submit" id="submit">
+        <input type="submit" value="Ուղարկել &#129309" id="submit">
     </form>
 
 </body>
