@@ -1,11 +1,11 @@
 * {
-    max-width: 95%;
+   margin: 0;
 }
 
 body {
+    margin: 5%;
     min-height: 100vh;
-    display: grid;
-    place-content: center;
+    display: flex;
     font-family: sans-serif;
     color: #6b6b6b;
     background-size: cover;
@@ -14,13 +14,17 @@ body {
 }
 
 form {
-    width: 90vw;
+    width: 75%;
+    margin: auto;
     max-width: 768px;
-    border: 1px solid #ddd;
+    border: 1px solid #d5d5d5;
     padding: 3vw;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(185, 0, 0, 0.5), 0 0 25px rgb(0, 0, 255, 0.5),
+    0 0 5px rgba(238, 67, 0, 0.5);
 }
 
 label {
@@ -43,6 +47,7 @@ textarea {
     margin-top: 20px;
     border: none;
     outline: none;
+    font-size: 0.825em;
 }
 
 input::placeholder {
