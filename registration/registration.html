@@ -15,28 +15,34 @@
     <form>
         <label class="form-group">
             <input type="name" id="name" placeholder="Enter your name" required>
-            <span>Name</span>
+            <span>Անուն</span>
         </label>
         <label class="form-group">
             <input type="surname" id="surname" placeholder="Enter your surname" required>
-            <span>Surname</span>
+            <span>Ազգանուն</span>
         </label>
         <label class="form-group">
             <input type="email" id="email" placeholder="Enter your email" required>
-            <span>Email</span>
+            <span>Էլ․ հասցե</span>
         </label>
         <label class="form-group">
             <input type="phoneNumber" id="phoneNumber" placeholder="Enter your Phone Number" required>
-            <span>Phone Number</span>
+            <span>Հեռախոահամար</span>
         </label>
         <label class="form-group">
-            <textarea type="text" id="suggestion" placeholder="Enter your suggestion" required></textarea>
+            <textarea type="text" id="suggestion" placeholder="Ձեր առաջարկը այստեղ․․․"></textarea>
         </label>
         <button>
             Submit
         </button>
-        <!-- <input type="submit" value="Submit" id="submit"> -->
     </form>
 </body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("CvAX4DPY9C3oGIEQX");
+    })();
+</script>
 
 </html>
