@@ -2,7 +2,7 @@ const submit = document.querySelector('form');
 const name = document.querySelector('input[type="name"]')
 const surname = document.querySelector('input[type="surname"]')
 const email = document.querySelector('input[type="email"]')
-const phoneNumber = document.querySelector('input[type="phoneNumber"]')
+const phoneNumber = document.querySelector('input[type="tel"]')
 const suggestion = document.getElementById('suggestion')
 
 function sendEmail() {
