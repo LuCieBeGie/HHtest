@@ -1,6 +1,7 @@
 const submit = document.querySelector('form');
 const radio = document.querySelector('input[name="answer"]:checked');
 const checked = document.querySelector('input[name="answer"]:checked')
+console.log(checked.value);
 
 
 function sendEmail() {

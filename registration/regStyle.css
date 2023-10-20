@@ -1,80 +1,96 @@
+@font-face {
+  font-family: NorKirk;
+  src: url(".././Fonts/NorKirk.ttf");
+}
+
 * {
-   margin: 0;
+  margin: 0;
 }
 
 body {
-    margin: 5%;
-    min-height: 100vh;
-    display: flex;
-    font-family: sans-serif;
-    color: #6b6b6b;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  margin: 5%;
+  min-height: 100vh;
+  display: flex;
+  font-family: NorKirk;
+  color: #6b6b6b;
+  background-image: url('../img/flag_combination.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 form {
-    width: 75%;
-    margin: auto;
-    max-width: 768px;
-    border: 1px solid #d5d5d5;
-    padding: 3vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px rgba(185, 0, 0, 0.5), 0 0 25px rgb(0, 0, 255, 0.5),
+  background-color: #fffcfc;
+  opacity: 0.98;
+  width: 75%;
+  margin: auto;
+  max-width: 768px;
+  border: 1px solid #d5d5d5;
+  padding: 3vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(185, 0, 0, 0.5), 0 0 25px rgb(0, 0, 255, 0.5),
     0 0 5px rgba(238, 67, 0, 0.5);
+}
+form h1{
+    text-align: center;
 }
 
 label {
-    margin-bottom: 15px;
-    position: relative;
-    border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
 }
 
 input {
-    width: 100%;
-    padding: 10px 0px;
-    margin-top: 20px;
-    border: none;
-    outline: none;
+  width: 100%;
+  padding: 10px 0px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
 }
 
 textarea {
-    width: 100%;
-    padding: 10px 0px;
-    margin-top: 20px;
-    border: none;
-    outline: none;
-    font-size: 0.825em;
+  width: 100%;
+  padding: 10px 0px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  font-size: 1em;
 }
 
 input::placeholder {
-    opacity: 0;
+  opacity: 0;
 }
 
 span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(30px);
-    font-size: 0.825em;
-    transition-duration: 300ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(30px);
+  font-size: 0.95em;
+  transition-duration: 300ms;
 }
 
 button {
-    padding: 15px 0px;
-    margin-top: 20px;
-    background: rgb(187, 245, 252);
-    color: #070038;
-    border: 1px solid rgb(181, 206, 255);
-    cursor: pointer;
-    border-radius: 3px;
+  padding: 15px 0px;
+  margin-top: 20px;
+  background: rgb(187, 245, 252);
+  color: #070038;
+  border: 1px solid rgb(181, 206, 255);
+  cursor: pointer;
+  border-radius: 3px;
 }
 
-label:focus-within>span,
-input:not(:placeholder-shown)+span {
-    color: rgb(4, 109, 120);
-    transform: translateY(0px);
+label:focus-within > span,
+input:not(:placeholder-shown) + span {
+  color: rgb(4, 109, 120);
+  transform: translateY(0px);
+}
+
+form a {
+  margin-top: 2%;
+  font-size: 1.2em;
 }
