@@ -20,6 +20,7 @@ function sendEmail() {
             res => {
                 clearForm()
                 alert('Ձեր պատասխանը ուղարկված է։ Շնորհակալություն պատասխանի համար')
+
             }
         ).catch(err => console.log(err));
 }
