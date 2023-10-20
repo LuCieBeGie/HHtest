@@ -13,8 +13,9 @@ body {
   display: flex;
   font-family: NorKirk;
   color: #6b6b6b;
-  background-image: url('../img/flag_combination.png');
-  background-size: cover;
+  background-image: url("../img/flag_combination.png");
+  background-size: 95% 95%;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
@@ -25,8 +26,9 @@ form {
   width: 75%;
   margin: auto;
   max-width: 768px;
+  min-height: 60vh;
   border: 1px solid #d5d5d5;
-  padding: 3vw;
+  padding: 4vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -34,8 +36,9 @@ form {
   box-shadow: 1px 1px 2px rgba(185, 0, 0, 0.5), 0 0 25px rgb(0, 0, 255, 0.5),
     0 0 5px rgba(238, 67, 0, 0.5);
 }
-form h1{
-    text-align: center;
+
+form h1 {
+  text-align: center;
 }
 
 label {
@@ -93,4 +96,13 @@ input:not(:placeholder-shown) + span {
 form a {
   margin-top: 2%;
   font-size: 1.2em;
+}
+
+@keyframes flagSlide {
+  from {
+    background-position: left center, center center;
+  }
+  to {
+    background-position: right center, center center;
+  }
 }
