@@ -28,7 +28,6 @@ function clearRadio() {
     document.querySelector('input[name="answer"]:checked').checked = false;
     document.querySelector('input[name="membership"]:checked').checked = false;
     document.querySelector('input[name="checkbox"]').checked = false;
-
 }
 
 submit.addEventListener('submit', function (event) {
