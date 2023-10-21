@@ -16,7 +16,10 @@ function sendEmail() {
             res => {
                 clearRadio()
                 document.getElementById('suggestion').value = ''
-                alert('Ձեր պատասխանը ուղարկված է։ Շնորհակալություն պատասխանի համար')
+                Swal.fire(
+                    'Ձեր պատասխանը ուղարկված է։ Շնորհակալություն պատասխանի համար'
+                )
+                // alert('Ձեր պատասխանը ուղարկված է։ Շնորհակալություն պատասխանի համար')
             }
         ).catch(err => console.log(err));
 }

@@ -19,7 +19,7 @@ function sendEmail() {
         .then(
             res => {
                 clearForm()
-                alert('Ձեր պատասխանը ուղարկված է։ Շնորհակալություն պատասխանի համար')
+                Swal.fire('Տվյալները ուղարկված են։ Շնորհակալություն պատասխանի համար')
 
             }
         ).catch(err => console.log(err));
